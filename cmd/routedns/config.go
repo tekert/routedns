@@ -215,7 +215,7 @@ type route struct {
 	Class         string
 	Name          string
 	Source        string
-	ECSSource     string   `toml:"ecs-source"`
+	ECSSource     string `toml:"ecs-source"`
 	Weekdays      []string // 'mon', 'tue', 'wed', 'thu', 'fri', 'sat', 'sun'
 	After, Before string   // Hour:Minute in 24h format, for example "14:30"
 	Invert        bool     // Invert the result of the match
